@@ -49,10 +49,16 @@
     <main>
       <!-- Герой -->
       <section class="hero">
-        <div class="container hero-block">
-          <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
+        <div class="container overlay">
+          <ul class="list">
+            <li class="hero__items">
+              <h1 class="hero__title">
+                Эффективные решения для вашего бизнеса
+              </h1>
 
-          <a href="" class="button hero__button">Заказать услугу</a>
+              <a href="" class="button hero__button">Заказать услугу</a>
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -61,27 +67,17 @@
         <div class="container">
           <h2 class="visually-hidden">Features СКРЫТЬ ЗАГОЛОВОК</h2>
           <ul class="list advantages">
-            <li class="advantages__items">
+            <li class="advantages__items icon-antenna">
               <!-- Внимание к деталям -->
-              <div>
-                <a href="" class="advantages__icon"
-                  ><img src="./images/antenna.svg" alt="antenna"
-                /></a>
-
-                <h3 class="title advantages__item">Внимание к деталям</h3>
-                <p class="advantages__description">
-                  Идейные соображения, а также начало повседневной работы по
-                  формированию позиции
-                </p>
-              </div>
+              <h3 class="title advantages__item">Внимание к деталям</h3>
+              <p class="advantages__description">
+                Идейные соображения, а также начало повседневной работы по
+                формированию позиции
+              </p>
             </li>
 
-            <li class="advantages__items">
+            <li class="advantages__items icon-clock">
               <!-- Пунктуальность -->
-              <a href="" class="advantages__icon"
-                ><img src="./images/clock.svg" alt="clock"
-              /></a>
-
               <h3 class="title advantages__item">Пунктуальность</h3>
               <p class="advantages__description">
                 Задача организации, в особенности же рамки и место обучения
@@ -89,11 +85,8 @@
               </p>
             </li>
 
-            <li class="advantages__items">
+            <li class="advantages__items icon-diagram">
               <!-- Планирование -->
-              <a href="" class="advantages__icon"
-                ><img src="./images/diagram.svg" alt="diagram-1"
-              /></a>
               <h3 class="title advantages__item">Планирование</h3>
               <p class="advantages__description">
                 Равным образом консультация с широким активом в значительной
@@ -101,11 +94,8 @@
               </p>
             </li>
 
-            <li class="advantages__items">
+            <li class="advantages__items icon-astronaut">
               <!-- Современные технологии -->
-              <a href="" class="advantages__icon"
-                ><img src="./images/astronaut.svg" alt="astronaut-1"
-              /></a>
               <h3 class="title advantages__item">Современные технологии</h3>
               <p class="advantages__description">
                 Значимость этих проблем настолько очевидна, что реализация
@@ -124,7 +114,7 @@
             <li class="work-list__item">
               <!-- Десктопные приложения -->
               <img
-                src="./images/img-desktop-applications.jpg"
+                src="./images/application.jpg"
                 alt="laptop"
                 width="370"
                 height="294"
@@ -148,7 +138,7 @@
             <li class="work-list__item">
               <!-- Дизайнерские решения -->
               <img
-                src="./images/img-design-decisions.jpg"
+                src="./images/img-decisions.jpg"
                 alt="monitor"
                 width="370"
                 height="294"
@@ -166,128 +156,168 @@
           <ul class="list team">
             <li class="team__item">
               <img
-                src="./images/img-john-smith.jpg"
+                src="./images/николай-кучеренко.jpg"
                 alt="photo"
                 width="270"
                 height="260"
                 class="team__img"
               />
-              <h3 class="title team__name">John Smith</h3>
+              <h3 class="title team__name">Николай Кучеренко</h3>
               <p class="description team__description">Product Designer</p>
               <ul class="list team__list">
                 <li class="team__icon">
-                  <a href=""
-                    ><img src="./images/instagram-2.svg" alt="Instagram" />
-                  </a>
+                  <button class="button-networks">
+                    <svg class="button-icon">
+                      <use href="./images/sprite.svg#icon-instagram"></use>
+                    </svg>
+                  </button>
                 </li>
                 <li class="team__icon">
-                  <a href=""
-                    ><img src="./images/twitter.svg" alt="Twitter" />
-                  </a>
+                  <button class="button-networks">
+                    <svg class="button-icon">
+                      <use href="./images/sprite.svg#icon-twitter"></use>
+                    </svg>
+                  </button>
                 </li>
                 <li class="team__icon">
-                  <a href=""
-                    ><img src="./images/facebook.svg" alt="Facebook" />
-                  </a>
+                  <button class="button-networks">
+                    <svg class="button-icon">
+                      <use href="./images/sprite.svg#icon-facebook"></use>
+                    </svg>
+                  </button>
                 </li>
                 <li class="team__icon">
-                  <a href=""><img src="./images/linkedin-1.svg" alt="IN" /> </a>
+                  <button class="button-networks">
+                    <svg class="button-icon">
+                      <use href="./images/sprite.svg#icon-linkedin"></use>
+                    </svg>
+                  </button>
                 </li>
               </ul>
             </li>
 
             <li class="team__item">
               <img
-                src="./images/img-marta-stewart.jpg"
+                src="./images/ольга-иванова.jpg"
                 alt="photo"
                 width="270"
                 height="260"
                 class="team__img"
               />
-              <h3 class="title team__name">Marta Stewart</h3>
+              <h3 class="title team__name">Ольга Иванова</h3>
               <p class="description team__description">Frontend Developer</p>
               <ul class="list team__list">
                 <li class="team__icon">
-                  <a href=""
-                    ><img src="./images/instagram-2.svg" alt="Instagram" />
-                  </a>
+                  <button class="button-networks">
+                    <svg class="button-icon">
+                      <use href="./images/sprite.svg#icon-instagram"></use>
+                    </svg>
+                  </button>
                 </li>
                 <li class="team__icon">
-                  <a href=""
-                    ><img src="./images/twitter.svg" alt="Twitter" />
-                  </a>
+                  <button class="button-networks">
+                    <svg class="button-icon">
+                      <use href="./images/sprite.svg#icon-twitter"></use>
+                    </svg>
+                  </button>
                 </li>
                 <li class="team__icon">
-                  <a href=""
-                    ><img src="./images/facebook.svg" alt="Facebook" />
-                  </a>
+                  <button class="button-networks">
+                    <svg class="button-icon">
+                      <use href="./images/sprite.svg#icon-facebook"></use>
+                    </svg>
+                  </button>
                 </li>
                 <li class="team__icon">
-                  <a href=""><img src="./images/linkedin-1.svg" alt="IN" /> </a>
+                  <button class="button-networks">
+                    <svg class="button-icon">
+                      <use href="./images/sprite.svg#icon-linkedin"></use>
+                    </svg>
+                  </button>
                 </li>
               </ul>
             </li>
 
             <li class="team__item">
               <img
-                src="./images/img-robert-jakis.jpg"
+                src="./images/андрей-шевченко.jpg"
                 alt="photo"
                 width="270"
                 height="260"
                 class="team__img"
               />
-              <h3 class="title team__name">Robert Jakis</h3>
+              <h3 class="title team__name">Андрей Шевченко</h3>
               <p class="description team__description">Marketing</p>
               <ul class="list team__list">
                 <li class="team__icon">
-                  <a href=""
-                    ><img src="./images/instagram-2.svg" alt="Instagram" />
-                  </a>
+                  <button class="button-networks">
+                    <svg class="button-icon">
+                      <use href="./images/sprite.svg#icon-instagram"></use>
+                    </svg>
+                  </button>
                 </li>
                 <li class="team__icon">
-                  <a href=""
-                    ><img src="./images/twitter.svg" alt="Twitter" />
-                  </a>
+                  <button class="button-networks">
+                    <svg class="button-icon">
+                      <use href="./images/sprite.svg#icon-twitter"></use>
+                    </svg>
+                  </button>
                 </li>
                 <li class="team__icon">
-                  <a href=""
-                    ><img src="./images/facebook.svg" alt="Facebook" />
-                  </a>
+                  <button class="button-networks">
+                    <svg class="button-icon">
+                      <use href="./images/sprite.svg#icon-facebook"></use>
+                    </svg>
+                  </button>
                 </li>
                 <li class="team__icon">
-                  <a href=""><img src="./images/linkedin-1.svg" alt="IN" /> </a>
+                  <button class="button-networks">
+                    <svg class="button-icon">
+                      <use href="./images/sprite.svg#icon-linkedin"></use>
+                    </svg>
+                  </button>
                 </li>
               </ul>
             </li>
 
             <li class="team__item">
               <img
-                src="./images/img-martin-doe.jpg"
+                src="./images/иван-николаев.jpg"
                 alt="photo"
                 width="270"
                 height="260"
                 class="team__img"
               />
-              <h3 class="title team__name">Martin Doe</h3>
+              <h3 class="title team__name">Иван Николаев</h3>
               <p class="description team__description">UI Designer</p>
               <ul class="list team__list">
                 <li class="team__icon">
-                  <a href=""
-                    ><img src="./images/instagram-2.svg" alt="Instagram" />
-                  </a>
+                  <button class="button-networks">
+                    <svg class="button-icon">
+                      <use href="./images/sprite.svg#icon-instagram"></use>
+                    </svg>
+                  </button>
                 </li>
                 <li class="team__icon">
-                  <a href=""
-                    ><img src="./images/twitter.svg" alt="Twitter"
-                  /></a>
+                  <button class="button-networks">
+                    <svg class="button-icon">
+                      <use href="./images/sprite.svg#icon-twitter"></use>
+                    </svg>
+                  </button>
                 </li>
                 <li class="team__icon">
-                  <a href=""
-                    ><img src="./images/facebook.svg" alt="Facebook" />
-                  </a>
+                  <button class="button-networks">
+                    <svg class="button-icon">
+                      <use href="./images/sprite.svg#icon-facebook"></use>
+                    </svg>
+                  </button>
                 </li>
                 <li class="team__icon">
-                  <a href=""><img src="./images/linkedin-1.svg" alt="IN" /></a>
+                  <button class="button-networks">
+                    <svg class="button-icon">
+                      <use href="./images/sprite.svg#icon-linkedin"></use>
+                    </svg>
+                  </button>
                 </li>
               </ul>
             </li>
@@ -357,35 +387,44 @@
             <b class="page-footer__title">Присоединяйтесь</b>
             <ul class="list team__list">
               <li class="team__icon">
-                <a href=""
-                  ><img src="./images/footer-instagram.svg" alt="Instagram"
-                /></a>
+                <button class="button-networks__invers">
+                  <svg class="button-icon__invers">
+                    <use href="./images/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </button>
               </li>
               <li class="team__icon">
-                <a href=""
-                  ><img src="./images/footer-twitter.svg" alt="Twitter"
-                /></a>
+                <button class="button-networks__invers">
+                  <svg class="button-icon__invers">
+                    <use href="./images/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </button>
               </li>
+
               <li class="team__icon">
-                <a href=""
-                  ><img src="./images/footer-facebook.svg" alt="Facebook" />
-                </a>
+                <button class="button-networks__invers">
+                  <svg class="button-icon__invers">
+                    <use href="./images/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </button>
               </li>
+
               <li class="team__icon">
-                <a href=""
-                  ><img src="./images/footer-linkedin.svg" alt="IN"
-                /></a>
+                <button class="button-networks__invers">
+                  <svg class="button-icon__invers">
+                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </button>
               </li>
             </ul>
           </div>
 
           <div class="e-mail">
             <p class="page-footer__title">Подпишитесь на рассылку</p>
-            <a href="" class="footer-e-mail">E-mail</a>
-          </div>
-
-          <div class="footer-button">
-            <a href="" class="button button-down">Подписаться</a>
+            <div class="footer-button">
+              <a href="" class="footer-e-mail">E-mail</a>
+              <a class="button button-down" href="">Подписаться</a>
+            </div>
           </div>
         </div>
 
