@@ -13,6 +13,7 @@
   --footer-color: rgba(255, 255, 255, 0.6);
   --team-background-color: #f5f4fa;
   --transparent-background-color: rgba(47, 48, 58, 0.8);
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 img {
@@ -123,7 +124,7 @@ a {
   margin-right: 50px;
 }
 
-.site-nav .link {
+.site-nav__link {
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -131,12 +132,62 @@ a {
   letter-spacing: 0.02em;
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav__link:hover,
+.site-nav__link:focus {
   color: var(--accent-color);
 }
 
-.site-nav .link.current {
+.site-nav__menu {
+  position: relative;
+
+  display: block;
+}
+
+.site-nav__menu::after {
+  content: ' ';
+
+  position: absolute;
+  left: 0;
+  bottom: -29px;
+
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--accent-color);
+  color: var(--accent-color);
+
+  opacity: 0;
+  transition: opacity 250ms;
+}
+
+.site-nav__menu:hover::after {
+  opacity: 1;
+}
+
+.site-nav__link .site-nav__current {
+  color: var(--accent-color);
+}
+
+.site-nav__current {
+  position: relative;
+
+  display: block;
+  color: var(--accent-color);
+}
+
+.site-nav__current::after {
+  content: ' ';
+
+  position: absolute;
+  left: 0;
+  bottom: -29px;
+
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--accent-color);
   color: var(--accent-color);
 }
 
@@ -178,7 +229,7 @@ a {
   fill: var(--accent-color);
 }
 
-.button-contacts {
+.contacts-item__info {
   display: inline-flex;
   width: 16px;
   height: 12px;
@@ -414,14 +465,7 @@ svg {
   letter-spacing: 0.03em;
 }
 
-.team__icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 24px;
-}
-
-/* Client*/
+/* Client */
 
 .client {
   display: flex;
@@ -438,7 +482,7 @@ svg {
   margin-right: 0;
 }
 
-.button-client {
+.client__link {
   display: inline-flex;
   width: 170px;
   height: 90px;
@@ -452,12 +496,12 @@ svg {
   text-decoration: none;
 }
 
-.button-client:hover {
+.client__link:hover {
   border-color: var(--accent-color);
   color: var(--accent-color);
 }
 
-.button-client__icon {
+.client__icon {
   display: inline-flex;
   margin-right: 10px;
   padding: 0;
@@ -723,7 +767,15 @@ svg {
   padding: 6px 22px;
 }
 
-.button-networks {
+/* Team */
+.team__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 24px;
+}
+
+.team-networks {
   display: inline-flex;
   width: 44px;
   height: 44px;
@@ -733,27 +785,28 @@ svg {
   border: none;
   border-radius: 50%;
   background-color: var(--primary-white-color);
-  color: #afb1b8;
+  fill: #afb1b8;
   text-decoration: none;
   cursor: pointer;
+  margin-right: 10px;
 }
 
-.button-networks:hover {
+.team-networks:hover,
+.team-networks:focus {
   background-color: var(--accent-color);
-  color: var(--primary-white-color);
-}
-
-.button-icon {
-  width: 20px;
-  height: 20px;
-  fill: #afb1b8;
-}
-
-.button-icon:hover {
   fill: var(--primary-white-color);
 }
 
-.button-networks__invers {
+.team-networks__icon {
+  fill: #afb1b8;
+}
+
+.team-networks__icon:hover,
+.team-networks__icon:focus {
+  fill: var(--primary-white-color);
+}
+
+.team-networks__invers {
   display: inline-flex;
   width: 44px;
   height: 44px;
@@ -769,12 +822,11 @@ svg {
   margin-right: 10px;
 }
 
-.button-networks__invers:hover {
+.team-networks__invers:hover,
+.team-networks__invers:focus {
   background-color: var(--accent-color);
 }
 
-.button-icon__invers {
-  width: 20px;
-  height: 20px;
+.team-icon__invers {
   fill: var(--primary-white-color);
 }
