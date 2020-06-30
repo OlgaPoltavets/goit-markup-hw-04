@@ -447,6 +447,8 @@ svg {
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 24px;
+  margin-left: 32px;
+  margin-right: 32px;
 }
 
 .team-list .title {
@@ -503,7 +505,8 @@ svg {
 
 .client__icon {
   display: inline-flex;
-  margin-right: 10px;
+  align-items: center;
+  justify-content: center;
   padding: 0;
   text-decoration: none;
   cursor: pointer;
@@ -772,7 +775,6 @@ svg {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 24px;
 }
 
 .team-networks {
@@ -788,7 +790,6 @@ svg {
   fill: #afb1b8;
   text-decoration: none;
   cursor: pointer;
-  margin-right: 10px;
 }
 
 .team-networks:hover,
@@ -804,6 +805,11 @@ svg {
 .team-networks__icon:hover,
 .team-networks__icon:focus {
   fill: var(--primary-white-color);
+}
+
+.footer-team__list {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .team-networks__invers {
